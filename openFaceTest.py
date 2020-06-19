@@ -7,6 +7,8 @@ import numpy as np
 np.set_printoptions(precision=2)
 import openface
 
+# docker run -p 9000:9000 -p 8000:8000 -v /Users/Mr_ren/DTU/biometrics:/root/biometrics -t -i bamos/openface /bin/bash
+
 modelDir = '/root/openface/models'
 dlibModelDir = os.path.join(modelDir, 'dlib')
 openfaceModelDir = os.path.join(modelDir, 'openface')
